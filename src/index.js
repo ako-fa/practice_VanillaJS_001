@@ -8,6 +8,14 @@ const onClickAdd = () => {
   const inputText = document.getElementById("textAdd").value;
   document.getElementById("textAdd").value = "";
 
+/**
+ * 押された削除ボタンの親の親タグ（li）を未完了リストから削除
+ * @param {Element} target
+ */
+const deleteFromIncompleteList = (target) => {
+  document.getElementById("listIncomplete").removeChild(target);
+};
+
   // liタグの生成
   const li = document.createElement("li");
   li.className = "list-row";
@@ -84,14 +92,6 @@ const onClickAdd = () => {
 
   // 未完了リストに追加
   document.getElementById("listIncomplete").appendChild(li);
-};
-
-/**
- * 押された削除ボタンの親の親タグ（li）を未完了リストから削除
- * @param {Element} target
- */
-const deleteFromIncompleteList = (target) => {
-  document.getElementById("listIncomplete").removeChild(target);
 };
 
 document
