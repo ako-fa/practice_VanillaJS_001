@@ -5,13 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcel Sandbox</title>
+  <title>TODO(JS)</title>
 </head>
 
 <body>
-  <div id="app"></div>
-  <p>修正しました</p>
+  <!-- 入力エリア -->
+  <div class="input-area">
+    <input type="text" id="textAdd" placeholder="TODOを入力">
+    <button id="buttonAdd" class="button-add">追加</button>
+  </div>
 
+  <!-- 未完了エリア -->
+  <div class="incomplete-area">
+    <p class="title">未完了のTODO</p>
+    <ul id="listIncomplete">
+      <li class="list-row">
+        <div class="list-content">
+          <p class="label">TODOです</p>
+          <button class="button-complete">完了</button>
+          <button class="button-delete">削除</button>
+        </div>
+      </li>
+      <li class="list-row">
+        <div class="list-content">
+          <p class="label">TODOです</p>
+          <button class="button-complete">完了</button>
+          <button class="button-delete">削除</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 完了エリア -->
+  <div class="complete-area">
+    <p class="title">完了したTODO</p>
+    <ul id="listComplete">
+      <li class="list-row">
+        <div class="list-content">
+          <p class="label">TODOでした</p>
+          <button class="button-return">戻す</button>
+        </div>
+      </li>
+    </ul>
+  </div>
   <script src="src/index.js"></script>
 </body>
 
