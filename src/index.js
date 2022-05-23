@@ -1,3 +1,5 @@
+import "./styles.css";
+
 /**
  * const、letなどの変数宣言
  */
